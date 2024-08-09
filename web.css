@@ -1,0 +1,130 @@
+/* Başlık stilleri */
+h1 {
+    text-align: center; /* Metni ortala */
+    font-size: 90px; /* Font boyutu */
+    font-family: 'Times New Roman', Times, serif; /* Font ailesi */
+    margin-top: 70px; /* Yukarıda bir boşluk bırakır */
+    background-color: rgba(224, 151, 41, 0.964); /* Arka plan rengi */
+    color: rgb(17, 11, 49); /* Metin rengi */
+    padding: 10px; /* İç dolgu */
+    margin-left: 100px; /* Sol kenardan 100 piksel azalt */
+    margin-right: 100px; /* Sağ kenardan 100 piksel azalt */
+    border-radius: 50px; /* Kenarları yuvarla */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekle */
+  }
+  
+  /* Ana içerik alanı */
+  .container {
+    display: flex; /* İçeriği yatay olarak hizalar */
+    justify-content: space-between; /* Aralarda boşluk bırakır */
+  }
+  
+  /* Kategori kutuları */
+  .category {
+    flex: 1; /* Esnek boyutlandırma */
+    margin-right: 20px; /* Sağ kenardan 20 piksel boşluk */
+    padding: 10px; /* İç dolgu */
+    border: 3px solid #ccc; /* Kenarlık stil ve rengi */
+    border-radius: 15px; /* Kenarları yuvarla */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Kutuya hafif bir gölge ekle */
+    background-color: rgba(37, 10, 75, 0.901); /* Arka plan rengi */
+  }
+  
+  /* Kategori kutuları üzerine gelindiğinde */
+  .category:hover {
+    transform: translateY(-2px); /* Biraz yukarı kaldır */
+    transition: transform 0.3s ease; /* Geçiş efekti uygula */
+  }
+  
+  
+  /* Kategori başlıkları */
+  .category-title {
+    background-color: #99a5c2;  /* Arka plan rengi */
+    padding: 5px; /* İç dolgu */
+    border-bottom: 1px solid #ccc;  /* Alt kenarlık */
+    border-radius: 5px 5px 0 0; /* Kenarları yuvarla */
+    text-align: center;  /* Metni ortala */
+    color: rgb(26, 13, 71);  /* Metin rengi */
+  }
+  
+  .category-title h2 {  /* üst ve alt kenar boşluklarını (margin) kaldırır */
+    margin: 0;
+  }
+  
+  /* Görev giriş kutusu ve butonu */
+  .task-container {
+    display: flex; /* İçeriği yatay olarak hizalar */
+    align-items: center; /* Öğeleri dikeyde ortalar */
+    margin-bottom: 10px; /* Aşağıda biraz boşluk bırak */
+  }
+  
+  .task-input {
+    flex: 1; /* Esnek boyutlandırma */
+    min-height: 40px; /* Minimum yükseklik */
+    padding: 5px 10px; /* İç dolgu */
+    font-size: 20px; /* Font boyutu */
+    border-radius: 5px; /* Kenarları yuvarla */
+    border: 1px solid #ccc; /* Kenarlık stil ve rengi */
+  }
+  
+  .add-task {
+    margin-left: 10px; /* Soldan 10 piksel boşluk */
+    padding: 5px 15px; /* İç dolgu */
+    font-size: 16px; /* Font boyutu */
+    border-radius: 5px; /* Kenarları yuvarla */
+    background-color: white; /* Arka plan rengi */
+    color: rgb(11, 2, 21); /* Metin rengi */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* İmleç tipi */
+  }
+  
+  /* Görev listesi */
+  .todolist {
+    list-style-type: none; /* Liste işareti kaldır */
+    padding: 0; /* Kenar boşluğu */
+  }
+  
+  /* Görevler */
+  .task {
+    display: flex; /* İçeriği yatay olarak hizalar */
+    align-items: center; /* Öğeleri dikeyde ortalar */
+    margin-bottom: 5px; /* Aşağıda biraz boşluk bırak */
+    color: white; /* Metin rengi */
+  }
+  
+  .task span {
+    flex: 1; /* Esnek boyutlandırma */
+    margin-right: 10px; /* Sağdan 10 piksel boşluk */
+  }
+  
+  .task button {
+    background-color: transparent; /* Arka plan rengi şeffaf */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* İmleç tipi */
+  }
+  
+  /* Tamamlanmış görevler */
+  .completed span {
+    text-decoration: line-through; /* Metni çiz */
+  }
+  
+  /* Sayfa arka planı */
+  body {
+    background-color: rgb(85, 136, 184); /* Arka plan rengi */
+    background-image: url('/resim/a.jpeg'); /* Arka plan resmi */
+    background-size: 100% auto; /* Genişlik tarayıcı genişliğine %100 olacak, yükseklik otomatik olarak ayarlanacak */
+    background-repeat: no-repeat; /* Tekrarlama yok */
+    background-size: cover; /* Tam kaplama */
+  }
+  
+  /* Hatırlatıcı kutusu */
+  .reminder-box {
+    background-color: rgb(222, 218, 218); /* Arka plan rengi */
+    padding: 8px; /* İç dolgu */
+    border-radius: 5px; /* Kenarları yuvarla */
+    position: fixed; /* Sabit konum */
+    bottom: 20px; /* Alt kenardan 20 piksel uzaklık */
+    right: 20px; /* Sağ kenardan 20 piksel uzaklık */
+    box-shadow: 0px 0px 10px rgba(24, 88, 125, 0.1); /* Hafif bir gölge ekle */
+    border: 3px solid #ccc; /* Kenarlık stil ve rengi */
+  }

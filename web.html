@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List for Travel</title>
+    <link rel="stylesheet" href="web.css"> <!-- Stil dosyasını bağlama -->
+</head>
+<body>
+<h1>TO DO LIST FOR TRAVEL</h1> <!-- Sayfa başlığı -->
+  <div class="container">
+    <!-- Kategori: Sanitary & medication -->
+    <div class="category" style="margin-top: 5px;">
+        <div class="category-title">
+            <h2>Sanitary & medication</h2> <!-- Kategori başlığı -->
+        </div>
+        <div class="task-container">
+            <input type="text" class="task-input" placeholder="Add a task..."> <!-- Görev ekleme giriş kutusu -->
+            <button class="add-task">Add</button> <!-- Görev ekleme butonu -->
+        </div>
+        <ul class="todolist"></ul> <!-- Görev listesi -->
+    </div>
+
+    <!-- Kategori: Electronics -->
+    <div class="category" style="margin-top: 5px;">
+        <div class="category-title">
+            <h2>Electronics</h2> <!-- Kategori başlığı -->
+        </div>
+        <div class="task-container">
+            <input type="text" class="task-input" placeholder="Add a task..."> <!-- Görev ekleme giriş kutusu -->
+            <button class="add-task">Add</button> <!-- Görev ekleme butonu -->
+        </div>
+        <ul class="todolist"></ul><!-- Görev listesi -->
+    </div>
+
+    <!-- Kategori: Documentation -->
+    <div class="category" style="margin-top: 5px;">
+        <div class="category-title">
+            <h2>Documentation</h2> <!-- Kategori başlığı -->
+        </div>
+        <div class="task-container">
+            <input type="text" class="task-input" placeholder="Add a task..."> <!-- Görev ekleme giriş kutusu -->
+            <button class="add-task">Add</button> <!-- Görev ekleme butonu -->
+        </div>
+        <ul class="todolist"></ul> <!-- Görev listesi -->
+    </div>
+
+    <!-- Kategori: Places to visit -->
+    <div class="category" style="margin-top: 5px;">
+        <div class="category-title">
+            <h2>Places to visit</h2> <!-- Kategori başlığı -->
+        </div>
+        <div class="task-container">
+            <input type="text" class="task-input" placeholder="Add a task..."> <!-- Görev ekleme giriş kutusu -->
+            <button class="add-task">Add</button> <!-- Görev ekleme butonu -->
+        </div>
+        <ul class="todolist"></ul> <!-- Görev listesi -->
+    </div>
+</div>
+<!-- Hatırlatıcı kutusu -->
+<div class="reminder-box" id="reminderBox"> <!-- Hatırlatıcı kutusu, "reminder-box" sınıfıyla ve "reminderBox" id'siyle tanımlanmıştır -->
+    <button class="close-btn" onclick="hideReminder()">X</button> <!-- Hatırlatıcı kutusunu kapatmak için bir kapatma düğmesi -->
+    <p style="text-align: center;"><b>❗❗❗ REMINDER </b></p> <!-- Hatırlatıcı kutusu başlığı -->
+   
+    <!-- Faydalı bağlantılar -->
+    <ul>
+        <li><a href="https://www.skyscanner.co.in/news/your-super-checklist-for-travel" target="_blank">www.skyscanner.co</a></li> <!-- Bir bağlantı öğesi -->
+        <li><a href="https://www.careinsurance.com/blog/travel-insurance-articles/your-packing-list-for-international-travel" target="_blank">https://www.careinsurance.com</a></li> <!-- Bir bağlantı öğesi -->
+        <li><a href="https://www.bajajallianz.com/blog/travel-insurance-articles/travel-packing-list-things-to-carry-while-travelling.html" target="_blank">https://www.bajajallianz.com</a></li> <!-- Bir bağlantı öğesi -->
+        <li><a href="https://www.airbnb.com.tr/a/discover/?c=.pi0.pk1407233645_59213966081&gad_source=1&gclid=CjwKCAjwi_exBhA8EiwA_kU1MheEwCp15titLsNeiAU-8WFECL55HxcybV5bqoS4wpDpaush2cb8CRoCdHUQAvD_BwE&gclsrc=aw.ds&_set_bev_on_new_domain=1715343891_YmY4MGJkNTAwNzE4" target="_blank">for accommodation</a></li> <!-- Bir bağlantı öğesi -->
+    </ul>
+</div>
+
+<script src="web.js"></script> <!-- JavaScript dosyasını bağlama -->
+</body>
+</html>
